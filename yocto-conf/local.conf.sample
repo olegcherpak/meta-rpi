@@ -49,3 +49,16 @@ PACKAGECONFIG_append_pn-qemu-native = " sdl"
 PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
 #ASSUME_PROVIDED += "libsdl-native"
 CONF_VERSION = "1"
+
+PREFERRED_VERSION_linux-raspberrypi = "4.%"
+DISTRO_FEATURES_remove = "wayland"
+
+LICENSE_FLAGS_WHITELIST="commercial"
+
+DISTRO_FEATURES_append += " \
+    wifi \
+    "
+
+VIDEO_CAMERA = "1"
+
+ENABLE_UART = "1"
