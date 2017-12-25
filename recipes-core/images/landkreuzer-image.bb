@@ -3,6 +3,7 @@ include recipes-core/images/rpi-basic-image.bb
 
 IMAGE_INSTALL += " \
 	v4l-utils \
+	nano \
 	"
 
 IMAGE_INSTALL_append = " \
