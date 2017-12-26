@@ -24,7 +24,7 @@ VIRTUAL-RUNTIME_initscripts = ""
 
 #TMPDIR = "${TOPDIR}/tmp"
 DISTRO ?= "poky"
-PACKAGE_CLASSES ?= "package_rpm"
+PACKAGE_CLASSES ?= "package_deb"
 #SDKMACHINE ?= "i686"
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
 USER_CLASSES ?= "buildstats image-mklibs image-prelink"
