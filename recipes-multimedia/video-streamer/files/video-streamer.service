@@ -1,0 +1,15 @@
+[Unit]
+Description=Video stream interface
+Wants=hostapd
+After=hostapd
+After=dnsmasq
+After=network.target
+Restart=always
+
+[Service]
+Type=simple
+RemainAfterExit=no
+ExecStart=/opt/video-stream/init.sh
+
+[Install]
+WantedBy=multi-user.target

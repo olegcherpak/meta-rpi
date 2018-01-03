@@ -6,6 +6,7 @@ IMAGE_INSTALL += " \
 	nano \
 	mpeg2dec \
 	vlc \
+	video-streamer \
 	"
 
 IMAGE_INSTALL_append = " \
