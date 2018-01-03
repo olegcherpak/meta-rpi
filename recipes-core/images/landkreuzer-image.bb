@@ -21,3 +21,6 @@ IMAGE_INSTALL_append = " \
 	python-smbus \
 	iptables \
 	"
+IMAGE_INSTALL_append = " \
+	pi-blaster \
+	"
