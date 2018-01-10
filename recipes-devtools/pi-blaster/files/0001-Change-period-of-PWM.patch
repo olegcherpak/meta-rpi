@@ -1,26 +1,28 @@
-From 79fbea579e2908f45f97a0bd3ee301c9396d2e2e Mon Sep 17 00:00:00 2001
-From: Oleh Cherpak <olegcherpak5@gmail.com>
-Date: Wed, 3 Jan 2018 21:19:19 +0200
+From b2ef4b547e813a4556d60b26f0aa4172561590ee Mon Sep 17 00:00:00 2001
+From: Oleh Cherpak <oleh.cherpak@globallogic.com>
+Date: Wed, 10 Jan 2018 12:46:46 +0200
 Subject: [PATCH] Change period of PWM
 
-Signed-off-by: Oleh Cherpak <olegcherpak5@gmail.com>
+Signed-off-by: Oleh Cherpak <oleh.cherpak@globallogic.com>
 ---
- pi-blaster.c | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ pi-blaster.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/pi-blaster.c b/pi-blaster.c
-index 7ba7a8a..5c83295 100644
+index 7ba7a8a..c947d61 100644
 --- a/pi-blaster.c
 +++ b/pi-blaster.c
-@@ -107,7 +107,7 @@ static uint8_t pin2gpio[MAX_CHANNELS];
+@@ -107,8 +107,8 @@ static uint8_t pin2gpio[MAX_CHANNELS];
  // will use too much memory bandwidth.  10us is a good value, though you
  // might be ok setting it as low as 2us.
  
 -#define CYCLE_TIME_US	10000
+-#define SAMPLE_US		10
 +#define CYCLE_TIME_US	20000
- #define SAMPLE_US		10
++#define SAMPLE_US		20
  #define NUM_SAMPLES		(CYCLE_TIME_US/SAMPLE_US)
  #define NUM_CBS			(NUM_SAMPLES*2)
+ 
 -- 
 2.7.4
 
